@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Introduction to React.js</title>
+
+	<meta name="description" content="Presentation on the topic React.js">
+	<meta name="author" content="Sergey Xursevich">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>React.js</h1>
+				<h4>The HTML Presentation on the topic React.js</h4>
+				<img width="250" height="250" data-src="img/logo-react.png" alt="React">
+				<p>
+					<small>Created by <a href="https://github.com/Sergey-Xursevich">Sergey Xursevich</a></small>
+				</p>
+			</section>
+
+			<section>
+				<section>
+					<h1>What is React.js</h1>
+					<ul>
+						<li style="margin: 20px">React is a JavaScript library that is used to create a user interface.
+						</li>
+						<li style="margin: 20px">React was originally intended for websites, for creating websites, but
+							later React Native appeared, which is already designed for mobile devices.</li>
+						<li style="margin: 20px">React to the ideal tool for building scalable web applications.</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<p>Here is an example of splitting the page into components:</p>
+						<img width="700" height="400"
+							data-src="img/img-1.png"
+							alt="React">
+						<p>Each selected fragment of the page shown in the figure is considered a component.</p>
+					</section>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Basic concepts</h1>
+					<ul>
+						<li style="margin: 20px">View from MVC</li>
+						<li style="margin: 20px">Reactive programming</li>
+						<li style="margin: 20px">Virtual DOM</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Reactive programming</h1>
+					<img width="700" height="320" data-src="img/img-4.jpg" alt="React">
+				</section>
+
+				<section>
+					<h1>Virtual DOM</h1>
+					<img width="700" height="320" data-src="img/img-5.png" alt="React">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Beginning of work</h1>
+					<p>
+						<ol>
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Connect it to the page:</p>
+									<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+											<script src="http://fb.me/react-with-addons-0.10.0.js"></script>
+										</code>
+									</pre>
+								</li>
+							</span>
+
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Install node.js;</p>
+								</li>
+							</span>
+
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Open a terminal and install yeoman, grunt, bower and the generator itself using
+										npm:</p>
+									<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+											npm install -g yeoman grunt-cli bower generator-react
+										</code>
+									</pre>
+
+								</li>
+							</span>
+
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Create a folder with the project and go to it;</p>
+								</li>
+							</span>
+
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Start the generator:</p>
+									<pre>
+											<code class="hljs" data-trim data-line-numbers="">
+												yo react
+											</code>
+										</pre>
+								</li>
+							</span>
+						</ol>
+					</p>
+				</section>
+
+
+				<section>
+					<p>
+						<ol>
+							<span class="fragment">
+								<li value="6" style="margin: 20px">
+									<p>Leave the check mark in the React with Addons and the rest as desired;</p>
+									<img width="850" height="500" data-src="img/img-6.png" alt="React addons">
+								</li>
+							</span>
+						</ol>
+					</p>
+				</section>
+
+				<section>
+					<p>
+						<ol>
+							<span class="fragment">
+								<li value="7" style="margin: 20px">
+									<p>Install client dependencies using bower:</p>
+									<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+											bower install
+										</code>
+									</pre>
+								</li>
+							</span>
+							<span class="fragment">
+								<li style="margin: 20px">
+									<p>Run the project:</p>
+									<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+											grunt serve
+										</code>
+									</pre>
+								</li>
+							</span>
+						</ol>
+					</p>
+				</section>
+
+				<section>
+					<h1>Result</h1>
+					<img width="750" height="450" data-src="img/img-7.png" alt="Result React.js">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>What it contains inside?</h1>
+					<img width="750" height="450" data-src="img/img-8.jpg" alt="black hole">
+				</section>
+
+				<section>
+					<h1>Code on the React.js</h1>
+					<pre>
+							<code class="hljs" data-trim data-line-numbers="">
+						class Hello extends React.Component {
+						   render() {
+							return React.createElement('div', null, `Hello ${this.props.toWhat}`);
+						   }
+						}
+									  
+						ReactDOM.render(
+						   React.createElement(Hello, {toWhat: 'World'}, null),
+						   document.getElementById('root')
+						);
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<h1>Virtual DOM</h1>
+					<span class="fragment">
+						<ol>
+							<li style="margin: 20px">
+								<p>For example, such markup:</p>
+								<pre>
+									<code class="hljs" data-trim data-line-numbers="">
+										<input type=”text” placeholder=”Email” />
+									</code>
+								</pre>
+							</li>
+						</ol>
+					</span>
+					<span class="fragment">
+						<ol>
+							<li value="2" style="margin: 20px">
+								<p>Presented as a Virtual DOM tree looks like this:</p>
+								<pre>
+									<code class="hljs" data-trim data-line-numbers="">
+										React.DOM.input({type: ‘text’, placeholder: ‘Email’});
+									</code>
+								</pre>
+							</li>
+						</ol>
+					</span>
+					<span class="fragment">
+						<ol>
+							<li value="3" style="margin: 20px">
+								<p>In props we also specify the handlers of the events we are interested in:</p>
+								<pre>
+									<code class="hljs" data-trim data-line-numbers="">
+										React.DOM.h1({onClick:this.goodbye}, ...);
+									</code>
+								</pre>
+							</li>
+						</ol>
+					</span>
+				</section>
+
+				<section>
+					<h1>Virtual DOM</h1>
+					<span class="fragment">
+						<ol>
+							<li style="margin: 20px">
+								<p>Such markup:</p>
+								<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+											<ul>
+											  <li>Text</li>
+											  <li>
+											      <a href="www.url.com">Link</a>
+											  </li>
+											</ul>
+										</code>
+									</pre>
+							</li>
+						</ol>
+					</span>
+					<span class="fragment">
+						<ol>
+							<li value="2" style="margin: 20px">
+								<p>In React.DOM looks like this markup:</p>
+								<pre>
+										<code class="hljs" data-trim data-line-numbers="">
+										React.DOM.ul(null,
+										  React.DOM.li(null, "Text"),
+										  React.DOM.li(null,
+										      React.DOM.a({href:"www.url.com"}, "Link")
+									      )
+										)
+										</code>
+									</pre>
+							</li>
+						</ol>
+					</span>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>What is JSX?</h1>
+					<img src="img/img-8.png" alt="">				
+				</section>
+				<section>
+					<h1>Advantage JSX</h1>
+					<span class="fragment">
+						<ol>
+							<li value="1" style="margin: 20px">
+								<p>Using it is easier to present the resulting DOM;</p>
+							</li>
+						</ol>
+					</span>
+					<span class="fragment">
+						<ol>
+							<li value="2" style="margin: 20px">
+								<p>Designers are more accustomed to working with such code;</p>
+							</li>
+						</ol>
+					</span>
+					<span class="fragment">
+						<ol>
+							<li value="3" style="margin: 20px">
+								<p>It is easy to figure out if you are familiar with MXML or XAML.</p>
+								<pre>
+									<code class="hljs" data-trim data-line-numbers="">					
+								ReactDOM.render(
+									 React.createElement(Hello, {toWhat: 'World'}, null),
+									 document.getElementById('root')
+								);
+									</code>
+								</pre>
+							</li>
+						</ol>
+					</span>
+				</section>
+			</section>
+
+			<section>
+				<h1>In total</h1>
+					<ol>
+						<li style="margin: 20px">
+							React is designed to create the fastest possible applications.
+						</li>
+						<li style="margin: 20px">
+							The “unit” of an application on React is a component.
+						</li>
+						<li style="margin: 20px">
+							The component is something complete and contains all the markup and logic necessary for the component to exist outside of any application.
+						</li>
+						<li style="margin: 20px">
+							Any component is controlled by the state, which, when changed, renders the component.
+						</li>
+					</ol>
+			</section>
+
+			<section>
+				<h1>Thanks for attention</h1>
+				<img src="img/img-10.jpg" alt="React">
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/markdown/markdown.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/search/search.js',
+					async: true
+				},
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+
+</body>
+
+</html>
